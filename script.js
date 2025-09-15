@@ -1,13 +1,13 @@
 let index = 0;
-const carouselItems = document.querySelectorAll(".carousel-item");
+let carouselItems = document.querySelectorAll(".carousel-item");
 
 const activeclear = () => {
     carouselItems.forEach((item) => {
         item.classList.remove('active');
     })
-}
+};
 
-const activecarouselItem = (index) => {
+const activecarouselItem =(index) => {
     carouselItems[index].classList.add('active');
 }
 
